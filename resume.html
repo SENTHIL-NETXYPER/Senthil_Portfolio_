@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///D:/THAT%20I%20CAN/resume/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senthilkumar M – AI Engineer Resume</title>
+<link href="./css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #e3ddd3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 16px 48px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .toolbar {
+    width: 100%;
+    max-width: 780px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 10px 20px; border-radius: 8px;
+    font-size: 13px; font-weight: 600; cursor: pointer;
+    border: none; font-family: inherit; transition: all 0.2s;
+    letter-spacing: 0.2px;
+  }
+  .btn-dl { background: #1e1e1e; color: #fff; }
+  .btn-dl:hover { background: #000; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.22); }
+  .btn-print { background: #fff; color: #1e1e1e; border: 1.5px solid #c8c0b0; }
+  .btn-print:hover { border-color: #1e1e1e; }
+
+  .resume {
+    width: 100%;
+    max-width: 780px;
+    background: #F7F3EC;
+    border-radius: 16px;
+    box-shadow: 0 8px 48px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 36px 52px 40px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  .name {
+    font-size: 30px;
+    font-weight: 800;
+    color: #0f0f0f;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .role {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-top: 3px;
+    letter-spacing: 1.2px;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    padding-top: 2px;
+  }
+  .contact-row-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 11.5px;
+    color: #4a4a4a;
+    font-weight: 400;
+  }
+  .contact-icon {
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .contact-icon svg { display: block; }
+  .contact-link {
+    color: #4a4a4a;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .contact-link:hover { border-color: #4a4a4a; }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #d0c8b6;
+    margin: 12px 0;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #0f0f0f;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .summary-text {
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: #3a3a3a;
+  }
+
+  .exp-entry { margin-bottom: 13px; }
+  .exp-entry:last-child { margin-bottom: 0; }
+
+  .exp-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .exp-company {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f0f0f;
+  }
+  .exp-date {
+    font-size: 11.5px;
+    color: #6a6a6a;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .exp-role-title {
+    font-size: 12px;
+    font-style: italic;
+    color: #5a5a5a;
+    margin-top: 1px;
+    margin-bottom: 5px;
+  }
+  .exp-bullets {
+    list-style: disc;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .exp-bullets li {
+    font-size: 12px;
+    line-height: 1.55;
+    color: #3a3a3a;
+  }
+
+  .edu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .edu-school {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f0f0f;
+  }
+  .edu-year {
+    font-size: 11.5px;
+    color: #6a6a6a;
+    white-space: nowrap;
+  }
+  .edu-degree {
+    font-size: 12px;
+    font-style: italic;
+    color: #5a5a5a;
+    margin-top: 1px;
+  }
+  .edu-detail {
+    font-size: 12px;
+    color: #3a3a3a;
+    margin-top: 4px;
+    line-height: 1.6;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+  }
+  .skills-group { break-inside: avoid; }
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .skill-tag {
+    font-size: 11.5px;
+    color: #3a3a3a;
+    background: #e8e2d6;
+    padding: 4px 12px;
+    border-radius: 5px;
+    line-height: 1.5;
+  }
+
+  .skill-group-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #0f0f0f;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  @media print {
+    body { background: #F7F3EC; padding: 0; }
+    .toolbar { display: none; }
+    .resume {
+      box-shadow: none;
+      border-radius: 0;
+      max-width: 100%;
+      padding: 28px 40px 32px;
+    }
+    @page { margin: 8mm; size: A4; }
+  }
+
+  @media (max-width: 640px) {
+    .resume { padding: 24px 20px 28px; }
+    .header { flex-direction: column; gap: 12px; }
+    .contact-info { align-items: flex-start; }
+    .skills-grid { grid-template-columns: 1fr; gap: 8px; }
+    .name { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button class="btn btn-print" onclick="window.print()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+    Print
+  </button>
+  <a href="resume.pdf" download="Senthilkumar_M_AI_Engineer_Resume.pdf" class="btn btn-dl" style="text-decoration: none; color: #fff;">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    Download PDF
+  </a>
+</div>
+
+<div class="resume" id="resumeDoc">
+
+  <div class="header">
+    <div>
+      <div class="name">SENTHILKUMAR M</div>
+      <div class="role">AI ENGINEER</div>
+    </div>
+    <div class="contact-info">
+      <div class="contact-row-item">
+        <span class="contact-icon">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </span>
+        <a href="mailto:kumarsenthil41075@gmail.com" class="contact-link">kumarsenthil41075@gmail.com</a>
+      </div>
+      <div class="contact-row-item">
+        <span class="contact-icon">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg>
+        </span>
+        <a href="https://github.com/SENTHIL-NETXYPER" class="contact-link" target="_blank">github.com/SENTHIL-NETXYPER</a>
+      </div>
+      <div class="contact-row-item">
+        <span class="contact-icon">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.9 19.79 19.79 0 0 1 1.61 3.27 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.07 6.07l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </span>
+        <a href="https://www.linkedin.com/in/senthilkumar-m-253456388/" class="contact-link" target="_blank">linkedin.com/in/senthilkumar-m</a>
+      </div>
+      <div class="contact-row-item">
+        <span class="contact-icon">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.9 19.79 19.79 0 0 1 1.61 3.27 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.07 6.07l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </span>
+        <a href="tel:+918667254699" class="contact-link">+91 86672 54699</a>
+      </div>
+      <div class="contact-row-item">
+        <span class="contact-icon">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </span>
+        Tamil Nadu, India
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-title">Summary</div>
+  <p class="summary-text">
+    AI Engineer seeking full-time roles building production-grade RAG pipelines, FastAPI services, and browser automation systems. Experienced with OpenAI, Groq, Claude, and Gemini APIs, n8n workflows, and Streamlit. Focused on Generative AI, LLM deployment, and intelligent document workflows.
+  </p>
+
+  <hr class="divider">
+
+  <div class="section-title">Experience</div>
+
+  <div class="exp-entry">
+    <div class="exp-top">
+      <div class="exp-company">Echo Digital</div>
+      <div class="exp-date">2026 - Present</div>
+    </div>
+    <div class="exp-role-title">AI &amp; Automation Engineer Intern (Early-stage AI Startup)</div>
+    <ul class="exp-bullets">
+      <li>Designed and deployed AI automation workflows for document verification, reducing manual processing time by 80% across client verification pipelines.</li>
+      <li>Built production FastAPI services integrating OCR, LLM inference, and structured data extraction for real-world business validation use cases.</li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-title">Highlights</div>
+  <ul class="exp-bullets">
+    <li>Built and deployed 5+ production AI systems spanning RAG, Speech AI, OCR, and Browser Automation.</li>
+    <li>Engineered legal RAG pipeline over 34K+ Indian records with multilingual NLP (EN, HI, TA, TE) and PII anonymization.</li>
+    <li>Reduced document verification time by 90% via AI-driven Playwright + OCR automation pipeline.</li>
+    <li>Published open-source AI projects on GitHub with documented setup and active maintenance.</li>
+    <li>QA Intern at Scaler AI Labs — performed exploratory testing and bug reporting on AI-driven platform features.</li>
+  </ul>
+
+  <hr class="divider">
+
+  <div class="section-title">Projects</div>
+
+  <div class="exp-entry">
+    <div class="exp-top">
+      <div class="exp-company">Udyam Verification API</div>
+    </div>
+    <div class="exp-role-title">FastAPI, Playwright, ddddocr, REST API</div>
+    <ul class="exp-bullets">
+      <li>Engineered zero-cost CAPTCHA automation using Playwright + ddddocr, eliminating paid OCR dependency.</li>
+      <li>Reduced manual verification from ~5 min to under 30 sec via FastAPI REST endpoint returning structured JSON results.</li>
+      <li>Live API → <a href="https://udyam-2-bonr.onrender.com/docs" class="contact-link" target="_blank">udyam-2-bonr.onrender.com/docs</a></li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-top">
+      <div class="exp-company">N8N Automated Employee Check-In System</div>
+    </div>
+    <div class="exp-role-title">n8n, Google Forms, Google Sheets, Gmail</div>
+    <ul class="exp-bullets">
+      <li>Built end-to-end attendance automation using n8n — connecting Google Forms → Sheets → Gmail with zero custom code.</li>
+      <li>Live Link → <a href="https://senthilmoni.app.n8n.cloud/projects/mkb3sbbS5xzA8NKT/workflows" class="contact-link" target="_blank">senthilmoni.app.n8n.cloud</a></li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-top">
+      <div class="exp-company">AI Resume Analyser</div>
+    </div>
+    <div class="exp-role-title">Claude API, FastAPI, Prompt Engineering, REST API</div>
+    <ul class="exp-bullets">
+      <li>Built ATS resume analyser using Claude API — scores keyword match, skill gaps, and JD relevance in a single API call.</li>
+      <li>Delivers section-level improvement suggestions via FastAPI, returning structured JSON ATS scores for easy integration.</li>
+      <li>Live API → <a href="https://resume-anonymizer-t5bb.onrender.com/docs" class="contact-link" target="_blank">resume-anonymizer-t5bb.onrender.com/docs</a></li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-top">
+      <div class="exp-company">Real-Time Voice Intelligence System</div>
+    </div>
+    <div class="exp-role-title">FastAPI, Groq Whisper Large V3 Turbo, Python, JavaScript</div>
+    <ul class="exp-bullets">
+      <li>Built real-time speech-to-text system using Groq Whisper Large V3 Turbo via optimized FastAPI pipeline, supporting live mic streaming, file uploads, session history, and export.</li>
+      <li>Source → <a href="https://github.com/SENTHIL-NETXYPER/audio_to_text" class="contact-link" target="_blank">github.com/SENTHIL-NETXYPER/audio_to_text</a></li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-top">
+      <div class="exp-company">NyayaGPT - Legal AI System</div>
+    </div>
+    <div class="exp-role-title">RAG, LLMs, LangChain, Vector DB, Multilingual NLP</div>
+    <ul class="exp-bullets">
+      <li>Built RAG pipeline over 34K+ Indian legal records using LangChain + FAISS with hybrid dense+keyword retrieval.</li>
+      <li>Implemented multilingual NLP (EN, HI, TA, TE) with NER-based PII anonymization for privacy-compliant responses.</li>
+      <li>Source → <a href="https://github.com/SENTHIL-NETXYPER" class="contact-link" target="_blank">github.com/SENTHIL-NETXYPER</a></li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-top">
+      <div class="exp-company">AI Question Generator API</div>
+    </div>
+    <div class="exp-role-title">FastAPI, Groq API, Pydantic, Python</div>
+    <ul class="exp-bullets">
+      <li>Engineered structured question generation backend using FastAPI, Groq Llama 3 models, and Pydantic schemas.</li>
+      <li>Dynamically generates verified MCQ and coding challenge structures based on custom topics, subtopics, and difficulty.</li>
+      <li>Live API → <a href="https://assisgnmet-api-ai.onrender.com/docs" class="contact-link" target="_blank">assisgnmet-api-ai.onrender.com/docs</a></li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-top">
+      <div class="exp-company">Assignment AI API</div>
+    </div>
+    <div class="exp-role-title">Python, FastAPI, LLMs, REST API</div>
+    <ul class="exp-bullets">
+      <li>Built a scalable AI Question Generator API with Python, FastAPI, and LLMs.</li>
+      <li>Implemented RESTful services, structured JSON outputs, validation, and robust API design.</li>
+      <li>Live API → <a href="https://assisgnmet-api-ai.onrender.com/docs" class="contact-link" target="_blank">assisgnmet-api-ai.onrender.com/docs</a></li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-title">Education History</div>
+
+  <div class="edu-top">
+    <div class="edu-school">Muthayammal Engineering College</div>
+    <div>
+      <span class="edu-year">2023 - 2027</span>
+      <span class="edu-year" style="margin-left: 14px;">CGPA: 7.5</span>
+    </div>
+  </div>
+  <div class="edu-degree">B.Tech in Artificial Intelligence &amp; Data Science</div>
+  <div class="edu-detail">
+    Relevant Coursework: ML, NLP, Data Modelling &amp; BI, AWS Cloud, DBMS, Software Engineering.
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid">
+    <div class="skills-group">
+      <div class="skill-group-title">AI &amp; GenAI</div>
+      <div class="skills-tags">
+        <span class="skill-tag">Generative AI</span>
+        <span class="skill-tag">LLMs</span>
+        <span class="skill-tag">RAG</span>
+        <span class="skill-tag">LangChain</span>
+        <span class="skill-tag">Prompt Engineering</span>
+        <span class="skill-tag">Vector Databases</span>
+        <span class="skill-tag">AI Agents</span>
+        <span class="skill-tag">Hugging Face Transformers</span>
+        <span class="skill-tag">ChromaDB / FAISS</span>
+        <span class="skill-tag">OpenAI API</span>
+        <span class="skill-tag">Groq API</span>
+        <span class="skill-tag">Claude API</span>
+        <span class="skill-tag">Gemini API</span>
+      </div>
+    </div>
+    <div class="skills-group">
+      <div class="skill-group-title">Backend &amp; APIs</div>
+      <div class="skills-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">REST API Design</span>
+        <span class="skill-tag">Pydantic</span>
+        <span class="skill-tag">Streamlit</span>
+      </div>
+    </div>
+    <div class="skills-group">
+      <div class="skill-group-title">Automation &amp; Tools</div>
+      <div class="skills-tags">
+        <span class="skill-tag">Playwright &amp; Browser Automation</span>
+        <span class="skill-tag">OCR &amp; Document Processing</span>
+        <span class="skill-tag">n8n &amp; Workflow Automation</span>
+      </div>
+    </div>
+    <div class="skills-group">
+      <div class="skill-group-title">Cloud &amp; Infra</div>
+      <div class="skills-tags">
+        <span class="skill-tag">AWS (Cloud Foundations)</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Git &amp; GitHub</span>
+        <span class="skill-tag">Render (Deployment)</span>
+        <span class="skill-tag">Convex (BaaS)</span>
+      </div>
+    </div>
+    <div class="skills-group">
+      <div class="skill-group-title">Data &amp; ML</div>
+      <div class="skills-tags">
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">NLP</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Pandas / NumPy</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-title">Certifications</div>
+  <div class="skills-tags">
+    <span class="skill-tag">RAG with LangChain (DeepLearning.AI)</span>
+    <span class="skill-tag">Agentic AI Fundamentals (DeepLearning.AI)</span>
+    <span class="skill-tag">Getting Started with AI (Google)</span>
+    <span class="skill-tag">HackIndia 2025 Participant</span>
+  </div>
+
+</div>
+
+<script>
+function downloadPDF() { window.print(); }
+</script>
+
+
+</body></html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Senthilkumar M - AI Engineer specializing in production-grade RAG pipelines, FastAPI, and browser automation.">
+  <title>Senthilkumar M | AI Engineer &amp; Automation Architect</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.7">
+</head>
+
+<body class="is-loading">
+
+  <!-- ===== PRELOADER / CURTAIN SPLIT INTRO ===== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-top"></div>
+    <div class="preloader-bottom"></div>
+  </div>
+  <div class="preloader-logo" id="preloader-logo">
+    <div class="pl-name"><span>SENTHILKUMAR M.</span></div>
+    <div class="pl-sub"><span>AI Engineer &amp; Automation Architect</span></div>
+    <div class="preloader-bar-wrap">
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Cyber Grid decorative overlay -->
+  <div class="cyber-grid"></div>
+
+  <!-- Dynamic Section Tracker Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-name">SENTHILKUMAR M.</span>
+      <span class="logo-separator">/</span>
+      <span class="logo-section" id="active-section-name">HOME</span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-container">
+
+      <!-- Center Split Giant Typography + Image Overlay -->
+      <div class="hero-visual-wrapper">
+        <h1 class="hero-visual-title">
+          <span class="hero-reveal-word"><span>SENTHIL</span></span>
+          <span class="hero-middle-m"><span>M.</span></span>
+          <span class="hero-reveal-word" style="transition-delay:0.12s"><span>KUMAR</span></span>
+        </h1>
+        <div class="hero-portrait-overlay">
+          <img src="assets/profile_pic.png" alt="Senthilkumar M portrait visual" class="hero-portrait-img">
+        </div>
+      </div>
+
+      <!-- Bottom CTAs & Description Row -->
+      <div class="hero-info-row hero-fade-in" style="transition-delay:0.6s">
+        <div class="hero-desc-col">
+          <p class="hero-desc-text">
+            Hi, I am Senthilkumar M! I build production-grade RAG pipelines, FastAPI services, and browser automation
+            systems to create real impact.
+          </p>
+          <a href="#testimonials" class="hero-testimonial-cta">
+            See few testimonials by our <span class="cta-red-underline">Work</span>
+          </a>
+        </div>
+        <div class="hero-action-col">
+          <a href="#contact" class="hero-collab-btn">
+            Let's Collaborate <span class="arrow-icon">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mouse Scroll Wheel Visual Indicator -->
+      <div class="scroll-indicator hero-fade-in" style="transition-delay:0.9s">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container text-center">
+      <span class="about-handle reveal" data-delay="0">@senthilkumar</span>
+      <p class="about-intro reveal" data-delay="1">
+        Hey, my name is Senthilkumar M. I'm an enthusiastic <span class="text-red">AI &amp; Automation Engineer</span>
+        building impactful digital solutions and helping founders turn bold ideas into <span class="text-red">legendary
+          companies</span> through strategy, fast execution, and modern technology.
+      </p>
+
+      <!-- Giant Stacked Name with Portrait Overlay -->
+      <div class="about-visual-wrapper reveal reveal-scale" data-delay="2">
+        <div class="about-bg-text text-left">about</div>
+        <div class="about-bg-text text-right">me</div>
+        <div class="about-canvas-container">
+          <canvas id="about-ai-canvas"></canvas>
+        </div>
+      </div>
+
+      <p class="about-desc reveal" data-delay="3">
+        Helping businesses transform bold ideas into <span class="text-red">scalable AI solutions</span> through
+        creative strategy, innovative thinking, and modern technology. I focus on building impactful machine learning
+        models, RAG pipelines, and automated scraping workflows that help brands grow faster and stand out.
+      </p>
+
+      <!-- Signature Visual -->
+      <div class="about-signature reveal" data-delay="4">
+        <img src="assets/senthil_signature_transparent.png" alt="Senthilkumar M Signature" class="signature-img">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container-full border-y">
+      <div class="services-header-row reveal">
+        <span class="services-tag-left">our Services</span>
+        <span class="services-tag-right">Right Strategy, Real Results</span>
+      </div>
+
+      <div class="services-grid-layout reveal" data-delay="1">
+
+        <!-- Left Column: Dynamic Content Box -->
+        <div class="services-preview-col" id="services-preview-box">
+          <!-- Background image container -->
+          <div class="services-preview-bg" id="services-preview-bg"
+            style="background-image: url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&amp;w=1200')">
+          </div>
+          <div class="services-preview-overlay"></div>
+
+          <h3 class="services-preview-title" id="services-preview-title">Intelligent<br>Context,<br>Semantic<br>Search
+          </h3>
+
+          <div class="services-preview-info">
+            <p class="services-preview-desc" id="services-preview-desc">
+              Designing and deploying robust Retrieval-Augmented Generation (RAG) systems over massive document
+              libraries. Implementing dense and keyword hybrid retrieval, vector indexing, and multilingual capabilities
+              to provide accurate, context-aware AI outputs.
+            </p>
+            <div class="services-preview-tags" id="services-preview-tags">
+              <span>LangChain</span>
+              <span>FAISS</span>
+              <span>ChromaDB</span>
+              <span>Multilingual NLP</span>
+              <span>NER Anonymization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Menu Buttons -->
+        <div class="services-menu-col">
+          <button class="service-menu-item active" data-service="0" id="btn-service-0">
+            <div class="menu-item-left">
+              <span class="menu-item-num">01</span>
+              <h4 class="menu-item-title">RAG &amp; LLM Pipelines</h4>
+            </div>
+            <div class="menu-item-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </button>
+
+          <button class="service-menu-item" data-service="1" id="btn-service-1">
+            <div class="menu-item-left">
+              <span class="menu-item-num">02</span>
+              <h4 class="menu-item-title">FastAPI &amp; Backend Systems</h4>
+            </div>
+            <div class="menu-item-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </button>
+
+          <button class="service-menu-item" data-service="2" id="btn-service-2">
+            <div class="menu-item-left">
+              <span class="menu-item-num">03</span>
+              <h4 class="menu-item-title">Browser &amp; Automation</h4>
+            </div>
+            <div class="menu-item-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </button>
+
+          <button class="service-menu-item" data-service="3" id="btn-service-3">
+            <div class="menu-item-left">
+              <span class="menu-item-num">04</span>
+              <h4 class="menu-item-title">Data &amp; Machine Learning</h4>
+            </div>
+            <div class="menu-item-icon">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="services-footer-row">
+        <span class="services-footer-text">Your Vision is Strong, Growth is Inevitable</span>
+        <a href="#contact" class="services-scroll-btn" aria-label="Scroll to Contact">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Toolkit Section (with High Contrast bg-slate-200) -->
+  <section id="technologies" class="toolkit-section">
+    <div class="container text-center">
+      <div class="section-header reveal">
+        <span class="section-subtitle" data-delay="0">MY TOOLKIT</span>
+        <h2 class="section-heading" data-delay="1">Cutting-edge tech stack for modern engineering</h2>
+        <p class="section-subtext" data-delay="2">Leveraging industry-standard tools to build highly secure, fluid, and
+          scalable AI solutions.</p>
+      </div>
+    </div>
+
+    <div class="marquee-container">
+      <!-- First Row: Scrolls Left -->
+      <div class="marquee-row marquee-left">
+        <div class="marquee-track">
+          <!-- original content -->
+          <div class="tech-pill"><span class="tech-icon">🐍</span>Python</div>
+          <div class="tech-pill"><span class="tech-icon">⚡</span>FastAPI</div>
+          <div class="tech-pill"><span class="tech-icon">🦜</span>LangChain</div>
+          <div class="tech-pill"><span class="tech-icon">🗄️</span>FAISS</div>
+          <div class="tech-pill"><span class="tech-icon">📂</span>ChromaDB</div>
+          <div class="tech-pill"><span class="tech-icon">🤖</span>OpenAI API</div>
+          <div class="tech-pill"><span class="tech-icon">🧠</span>Claude API</div>
+          <div class="tech-pill"><span class="tech-icon">✨</span>Gemini API</div>
+          <div class="tech-pill"><span class="tech-icon">🔥</span>Groq API</div>
+          <div class="tech-pill"><span class="tech-icon">💡</span>Prompt Eng.</div>
+          <div class="tech-pill"><span class="tech-icon">🌀</span>GenAI</div>
+          <div class="tech-pill"><span class="tech-icon">🚀</span>LLMs</div>
+          <!-- duplicate content -->
+          <div class="tech-pill"><span class="tech-icon">🐍</span>Python</div>
+          <div class="tech-pill"><span class="tech-icon">⚡</span>FastAPI</div>
+          <div class="tech-pill"><span class="tech-icon">🦜</span>LangChain</div>
+          <div class="tech-pill"><span class="tech-icon">🗄️</span>FAISS</div>
+          <div class="tech-pill"><span class="tech-icon">📂</span>ChromaDB</div>
+          <div class="tech-pill"><span class="tech-icon">🤖</span>OpenAI API</div>
+          <div class="tech-pill"><span class="tech-icon">🧠</span>Claude API</div>
+          <div class="tech-pill"><span class="tech-icon">✨</span>Gemini API</div>
+          <div class="tech-pill"><span class="tech-icon">🔥</span>Groq API</div>
+          <div class="tech-pill"><span class="tech-icon">💡</span>Prompt Eng.</div>
+          <div class="tech-pill"><span class="tech-icon">🌀</span>GenAI</div>
+          <div class="tech-pill"><span class="tech-icon">🚀</span>LLMs</div>
+        </div>
+      </div>
+
+      <!-- Second Row: Scrolls Right -->
+      <div class="marquee-row marquee-right">
+        <div class="marquee-track">
+          <!-- original content -->
+          <div class="tech-pill"><span class="tech-icon">🎭</span>Playwright</div>
+          <div class="tech-pill"><span class="tech-icon">🛡️</span>ddddocr</div>
+          <div class="tech-pill"><span class="tech-icon">🔗</span>n8n Workflow</div>
+          <div class="tech-pill"><span class="tech-icon">☁️</span>AWS Cloud</div>
+          <div class="tech-pill"><span class="tech-icon">🐳</span>Docker</div>
+          <div class="tech-pill"><span class="tech-icon">🐙</span>Git &amp; GitHub</div>
+          <div class="tech-pill"><span class="tech-icon">🌍</span>Render Deploy</div>
+          <div class="tech-pill"><span class="tech-icon">⚡</span>Convex (BaaS)</div>
+          <div class="tech-pill"><span class="tech-icon">📈</span>Streamlit</div>
+          <div class="tech-pill"><span class="tech-icon">📊</span>Pandas &amp; NumPy</div>
+          <div class="tech-pill"><span class="tech-icon">🖧</span>Machine Learning</div>
+          <div class="tech-pill"><span class="tech-icon">💾</span>SQL</div>
+          <!-- duplicate content -->
+          <div class="tech-pill"><span class="tech-icon">🎭</span>Playwright</div>
+          <div class="tech-pill"><span class="tech-icon">🛡️</span>ddddocr</div>
+          <div class="tech-pill"><span class="tech-icon">🔗</span>n8n Workflow</div>
+          <div class="tech-pill"><span class="tech-icon">☁️</span>AWS Cloud</div>
+          <div class="tech-pill"><span class="tech-icon">🐳</span>Docker</div>
+          <div class="tech-pill"><span class="tech-icon">🐙</span>Git &amp; GitHub</div>
+          <div class="tech-pill"><span class="tech-icon">🌍</span>Render Deploy</div>
+          <div class="tech-pill"><span class="tech-icon">⚡</span>Convex (BaaS)</div>
+          <div class="tech-pill"><span class="tech-icon">📈</span>Streamlit</div>
+          <div class="tech-pill"><span class="tech-icon">📊</span>Pandas &amp; NumPy</div>
+          <div class="tech-pill"><span class="tech-icon">🖧</span>Machine Learning</div>
+          <div class="tech-pill"><span class="tech-icon">💾</span>SQL</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Portfolio (Projects) Section -->
+  <section id="portfolio" class="projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Digital Portfolio</span>
+        <h2 class="section-heading">Innovation Through Technology</h2>
+      </div>
+
+      <!-- 2-column Grid Layout (matching friend's layout) -->
+      <div class="projects-grid reveal-stagger">
+
+        <!-- Project 1 -->
+        <div class="project-card" id="project-udyam">
+          <div class="project-header">
+            <span class="project-num">01 / AUTOMATION</span>
+          </div>
+          <h3 class="project-title">Udyam Verification API</h3>
+          <p class="project-desc">
+            Engineered a zero-cost CAPTCHA automation pipeline using Playwright + ddddocr, eliminating dependencies on
+            paid OCR. Packaged as a FastAPI REST endpoint that reduces manual verification from ~5 minutes to under 30
+            seconds.
+          </p>
+          <div class="project-tech">
+            <span>FastAPI</span>
+            <span>Playwright</span>
+            <span>ddddocr</span>
+          </div>
+          <div class="project-links">
+            <a href="https://udyam-2-bonr.onrender.com/docs" target="_blank" class="project-btn-more"
+              id="link-udyam-live">live /&gt;<span class="live-dot"></span></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" id="project-n8n">
+          <div class="project-header">
+            <span class="project-num">02 / WORKFLOW</span>
+          </div>
+          <h3 class="project-title">N8N Employee Check-In</h3>
+          <p class="project-desc">
+            Built an end-to-end check-in and attendance automation system using n8n. Connected Google Forms to Google
+            Sheets and automated custom email alerts via Gmail with zero custom code.
+          </p>
+          <div class="project-tech">
+            <span>n8n</span>
+            <span>Google Sheets</span>
+            <span>Gmail API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://senthilmoni.app.n8n.cloud/projects/mkb3sbbS5xzA8NKT/workflows" target="_blank"
+              class="project-btn-more" id="link-n8n-live">live /&gt;<span class="live-dot"></span></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" id="project-ats">
+          <div class="project-header">
+            <span class="project-num">03 / AGENTIC AI</span>
+          </div>
+          <h3 class="project-title">AI Resume Analyser</h3>
+          <p class="project-desc">
+            Created an ATS resume scoring and keyword matching analyzer powered by Claude API. Features
+            segment-by-segment improvement tips returned via a custom FastAPI endpoint inside a clean structured JSON
+            schema.
+          </p>
+          <div class="project-tech">
+            <span>FastAPI</span>
+            <span>Claude API</span>
+            <span>Prompt Eng.</span>
+          </div>
+          <div class="project-links">
+            <a href="https://resume-anonymizer-t5bb.onrender.com/docs" target="_blank" class="project-btn-more"
+              id="link-ats-live">live /&gt;<span class="live-dot"></span></a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" id="project-voice">
+          <div class="project-header">
+            <span class="project-num">04 / SPEECH AI</span>
+          </div>
+          <h3 class="project-title">Voice Intelligence System</h3>
+          <p class="project-desc">
+            A real-time speech transcription interface powered by Groq Whisper Large V3 Turbo. Supports microphone
+            streaming, audio file uploads, session export formats, and persistent history via an optimized FastAPI
+            backend.
+          </p>
+          <div class="project-tech">
+            <span>FastAPI</span>
+            <span>Groq Whisper</span>
+            <span>Web Audio API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SENTHIL-NETXYPER/audio_to_text" target="_blank" class="project-btn-more"
+              id="link-voice-code">live /&gt;<span class="live-dot"></span></a>
+            <a href="https://github.com/SENTHIL-NETXYPER/audio_to_text" target="_blank" class="project-btn-source"
+              id="link-voice-source">// GitHub Code /&gt;</a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" id="project-nyayagpt">
+          <div class="project-header">
+            <span class="project-num">05 / RAG &amp; LLM</span>
+          </div>
+          <h3 class="project-title">NyayaGPT - Legal AI</h3>
+          <p class="project-desc">
+            Designed a specialized RAG pipeline indexing over 34K+ Indian legal records. Utilizes hybrid vector and
+            keyword searches, supports multilingual queries (English, Hindi, Tamil, Telugu), and runs custom PII masking
+            rules.
+          </p>
+          <div class="project-tech">
+            <span>LangChain</span>
+            <span>FAISS</span>
+            <span>NLP</span>
+            <span>PII Anonymization</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SENTHIL-NETXYPER" target="_blank" class="project-btn-more"
+              id="link-nyaya-code">live /&gt;<span class="live-dot"></span></a>
+            <a href="https://github.com/SENTHIL-NETXYPER" target="_blank" class="project-btn-source"
+              id="link-nyaya-source">// GitHub Code /&gt;</a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" id="project-question-generator">
+          <div class="project-header">
+            <span class="project-num">06 / BACKEND &amp; AI</span>
+          </div>
+          <h3 class="project-title">AI Question Generator API</h3>
+          <p class="project-desc">
+            Engineered a FastAPI backend integrating the Groq API to dynamically generate multiple-choice (MCQ) and coding questions. Utilizes structured Pydantic schemas to validate LLM outputs for seamless API consumption.
+          </p>
+          <div class="project-tech">
+            <span>FastAPI</span>
+            <span>Groq API</span>
+            <span>Pydantic</span>
+            <span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://assisgnmet-api-ai.onrender.com/docs" target="_blank" class="project-btn-more"
+              id="link-question-generator-live">live /&gt;<span class="live-dot"></span></a>
+            <a href="https://github.com/SENTHIL-NETXYPER" target="_blank" class="project-btn-source"
+              id="link-question-generator-source">// GitHub Code /&gt;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Quote Section -->
+  <section class="philosophy-section">
+    <div class="container text-center">
+      <blockquote class="philosophy-quote reveal reveal-scale">
+        "Design is not just what it looks like. Design is how it works."
+      </blockquote>
+      <cite class="philosophy-author reveal" data-delay="2">— Steve Jobs</cite>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process-section">
+    <div class="container" style="position: relative;">
+      
+      <!-- Right Side Scroll Guide Indicator -->
+      <div class="process-scroll-indicator">
+        <div class="indicator-pin">
+          <div class="indicator-dot"></div>
+          <div class="indicator-line"></div>
+        </div>
+        <div class="indicator-text">Scroll down to see<br>the process in action</div>
+      </div>
+
+      <div class="section-header reveal">
+        <span class="section-subtitle">• WORKFLOW OUR STRATEGY</span>
+        <h2 class="section-heading">04 // PROCESS APPROACH</h2>
+        <p class="section-subtext"
+          style="color: var(--text-secondary); margin-top: 12px; font-size: 15px; font-weight: 300;">How I like to
+          approach every project I get into.</p>
+      </div>
+
+      <div class="process-timeline reveal-stagger">
+        <div class="process-line-track"></div>
+        <div class="process-line-fill" id="process-line-fill"></div>
+        
+        <!-- Step 1 -->
+        <div class="process-step" id="step-1">
+          <div class="step-header">
+            <span class="step-phase-num">01</span>
+            <span class="step-phase-name">Phase 1</span>
+          </div>
+          
+          <div class="step-node">
+            <svg class="node-checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-icon-container">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="step-icon">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="step-title">Discovery &amp; Prompts</h3>
+            <p class="step-desc">Analyzing business bottlenecks, defining target metrics, and engineering robust prompts/workflows to outline the AI agent solutions.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step" id="step-2">
+          <div class="step-header">
+            <span class="step-phase-num">02</span>
+            <span class="step-phase-name">Phase 2</span>
+          </div>
+          
+          <div class="step-node">
+            <svg class="node-checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-icon-container">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="step-icon">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">RAG &amp; Vector DBs</h3>
+            <p class="step-desc">Designing document embedding pipelines, structuring metadata, and optimizing dense-sparse indices in vector datastores.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step" id="step-3">
+          <div class="step-header">
+            <span class="step-phase-num">03</span>
+            <span class="step-phase-name">Phase 3</span>
+          </div>
+          
+          <div class="step-node">
+            <svg class="node-checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-icon-container">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="step-icon">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="step-title">FastAPI &amp; Automation</h3>
+            <p class="step-desc">Coding the backend endpoints, orchestrating integrations with n8n, and programming browser bots using Playwright.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step" id="step-4">
+          <div class="step-header">
+            <span class="step-phase-num">04</span>
+            <span class="step-phase-name">Phase 4</span>
+          </div>
+          
+          <div class="step-node">
+            <svg class="node-checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </div>
+          
+          <div class="step-card">
+            <div class="step-icon-container">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="step-icon">
+                <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5M14 2l4 4L8 16H4v-4L14 2z"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">Verify &amp; Render Deploy</h3>
+            <p class="step-desc">Executing full end-to-end integration checks, dockerizing backend microservices, and rolling out to live servers via Render.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom Scroll Mouse Indicator -->
+      <div class="process-bottom-mouse">
+        <div class="scroll-mouse small-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Work With Me (Stats Section) -->
+  <section class="why-section" id="stats">
+    <div class="container stats-container">
+      <div class="stats-header-col reveal reveal-left">
+        <h2 class="stats-title-text">why work<br><span class="text-red">with me</span></h2>
+        <p class="stats-subtitle-text">I build AI-powered solutions that automate workflows, integrate systems, and deliver real business impact.</p>
+      </div>
+      <div class="why-features-col reveal-stagger">
+        
+        <!-- Feature 1 -->
+        <div class="why-feature-row">
+          <div class="why-feature-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
+              <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+              <circle cx="12" cy="5" r="2"></circle>
+              <path d="M12 7v4M8 15h.01M16 15h.01M6 11V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path>
+            </svg>
+          </div>
+          <div class="why-feature-separator"></div>
+          <div class="why-feature-content">
+            <h3 class="why-feature-title">AI Automation Expert</h3>
+            <p class="why-feature-desc">Building smart AI agents, pipelines, and automations that save time and reduce costs.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="why-feature-row">
+          <div class="why-feature-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div class="why-feature-separator"></div>
+          <div class="why-feature-content">
+            <h3 class="why-feature-title">Clean &amp; Scalable Code</h3>
+            <p class="why-feature-desc">Writing maintainable, efficient, and production-ready code with best practices.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="why-feature-row">
+          <div class="why-feature-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <div class="why-feature-separator"></div>
+          <div class="why-feature-content">
+            <h3 class="why-feature-title">Fast &amp; Reliable Delivery</h3>
+            <p class="why-feature-desc">Delivering high-quality solutions on time with performance and accuracy.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="why-feature-row">
+          <div class="why-feature-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feature-icon">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="why-feature-separator"></div>
+          <div class="why-feature-content">
+            <h3 class="why-feature-title">Client-Focused Approach</h3>
+            <p class="why-feature-desc">Clear communication, requirement understanding, and solutions that create real value.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">client feedback</span>
+        <h2 class="section-heading">What Collaborators Say</h2>
+      </div>
+
+      <div class="testimonials-grid reveal-stagger">
+        <div class="testimonial-card" id="test-1">
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-text">
+            "Senthilkumar has an incredible ability to build complex AI solutions fast. He transformed our document
+            verification workflow from a slow, manual task into a highly optimized, automated Playwright pipeline that
+            runs in seconds."
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Echo Digital Co-Founder</span>
+            <span class="author-title">Early-stage AI Startup</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card" id="test-2">
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-text">
+            "His technical skills in configuring FAISS indices and LangChain workflows are impressive. He managed to
+            index over 34K legal records and build a multilingual QA engine that works flawlessly."
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">AI Labs Supervisor</span>
+            <span class="author-title">Muthayammal Engineering College</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-box-wrapper reveal reveal-scale">
+        <span class="contact-subtitle-tag">contact us</span>
+        <h2 class="contact-main-heading">Have any projects in mind? Connect + let's work together.</h2>
+
+        <!-- 3 columns direct links layout (matching friend's layout exactly) -->
+        <div class="contact-action-columns reveal-stagger">
+
+          <div class="contact-action-col">
+            <h3 class="action-heading">GET IN TOUCH</h3>
+            <a href="mailto:kumarsenthil41075@gmail.com" class="action-link-btn"
+              id="btn-mail">kumarsenthil41075@gmail.com</a>
+          </div>
+
+          <div class="contact-action-col">
+            <h3 class="action-heading">SEND A SUGGESTION</h3>
+            <a href="https://wa.me/918667254699" target="_blank" class="action-link-btn" id="btn-whatsapp">WhatsApp
+              Chat</a>
+          </div>
+
+          <div class="contact-action-col">
+            <h3 class="action-heading">JOIN OUR TEAM</h3>
+            <a href="https://www.linkedin.com/in/senthilkumar-m-253456388/" target="_blank" class="action-link-btn"
+              id="btn-linkedin">LinkedIn Connect</a>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-bottom-row">
+          <p class="footer-copy-text">&copy; 2026 Senthilkumar M. All rights reserved.</p>
+
+          <div class="footer-right-block">
+            <div class="footer-links-nav">
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#portfolio">Projects</a>
+            </div>
+
+            <!-- Social round icon links (matching friend's social icon buttons) -->
+            <div class="footer-socials-list">
+              <a href="https://github.com/SENTHIL-NETXYPER" target="_blank" class="social-icon-btn"
+                id="footer-social-github" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/senthilkumar-m-253456388/" target="_blank" class="social-icon-btn"
+                id="footer-social-linkedin" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="mailto:kumarsenthil41075@gmail.com" class="social-icon-btn" id="footer-social-email"
+                aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-follower" id="custom-cursor-follower"></div>
+
+  <!-- Script -->
+  <script src="app.js?v=2.7"></script>
+</body>
+
+</html>

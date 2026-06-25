@@ -1,0 +1,10 @@
+# Windows thumbnail database/desktop configs
+desktop.ini
+Thumbs.db
+
+# macOS files
+.DS_Store
+
+# Temporary/Cache files
+.tempmediaStorage/
+*.log
