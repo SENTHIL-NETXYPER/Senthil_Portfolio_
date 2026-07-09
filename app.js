@@ -741,5 +741,55 @@ document.addEventListener('DOMContentLoaded', () => {
     render();
   }
 
+  // ==========================================================================
+  // GSAP UI SUITE — Interactive Spotlight Glow, 3D Perspective Tilt & Magnetic Pull
+  // ==========================================================================
+  const gsapCards = document.querySelectorAll('.project-card, .experience-item, .contact-card');
+  gsapCards.forEach(card => {
+    card.classList.add('gsap-ui-card');
+    let spotlight = card.querySelector('.gsap-ui-spotlight');
+    if (!spotlight) {
+      spotlight = document.createElement('div');
+      spotlight.className = 'gsap-ui-spotlight';
+      card.appendChild(spotlight);
+    }
+
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      // Update spotlight position
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+
+      // 3D Card Tilt Calculation
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -6; // max 6 deg tilt
+      const rotateY = ((x - centerX) / centerX) * 6;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px) scale3d(1.015, 1.015, 1.015)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px) scale3d(1, 1, 1)';
+    });
+  });
+
+  // GSAP UI Magnetic Hover Buttons
+  const magneticBtns = document.querySelectorAll('.btn-primary, .btn-secondary');
+  magneticBtns.forEach(btn => {
+    btn.classList.add('gsap-ui-magnetic');
+    btn.addEventListener('mousemove', e => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * 0.28}px, ${y * 0.28}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0px, 0px)';
+    });
+  });
 
 });
