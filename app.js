@@ -793,3 +793,43 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* ==========================================================================
+   RESUME MODAL CONTROLS
+   ========================================================================== */
+window.openResumeModal = function() {
+  const modal = document.getElementById('resume-modal');
+  if (modal) {
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+window.closeResumeModal = function() {
+  const modal = document.getElementById('resume-modal');
+  if (modal) {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+};
+
+// Close modal when pressing ESC key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    window.closeResumeModal();
+  }
+});
+
+// Close modal when clicking on background overlay
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('resume-modal');
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        window.closeResumeModal();
+      }
+    });
+  }
+});
